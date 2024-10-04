@@ -134,6 +134,7 @@
 
 ## Python 
 
+- [zulip/zulip-terminal](https://github.com/zulip/zulip-terminal) - Official Zulip terminal client.
 - [ranaroussi/yfinance](https://github.com/ranaroussi/yfinance) - Download market data from Yahoo! Finance's API
 - [mgoltzsche/beets-ytimport](https://github.com/mgoltzsche/beets-ytimport) - A beets plugin to import music from Youtube and SoundCloud
 - [dmontagu/fastapi-utils](https://github.com/dmontagu/fastapi-utils) - Reusable utilities for FastAPI
