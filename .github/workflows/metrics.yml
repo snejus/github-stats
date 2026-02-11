@@ -1,9 +1,14 @@
 name: GitHub-Profile-Summary-Cards
 
 on:
-  schedule: # execute every 24 hours
-    - cron: "* */24 * * *"
+  # Schedule updates (each hour)
+  schedule:
+    - cron: "0 12 * * *"
+  # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -21,6 +26,8 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
           # BRANCH_NAME is optional, default to main, branch name to push cards
           BRANCH_NAME: master
+          # UTC_OFFSET is optional, default to zero
+          UTC_OFFSET: 0
           # EXCLUDE is an optional comma seperated list of languages to exclude, defaults to ""
           EXCLUDE: ""
           # AUTO_PUSH is optional, a boolean variable default to true, whether automatically push generated files to desired branch
